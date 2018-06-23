@@ -1,0 +1,39 @@
+<div class="container addlistings">
+  <div class="row">
+    <div class="col-md-12">
+        <form (submit)="onSubmit()" action="">
+            <div class="form-group" >
+              <input type="text" [(ngModel)]="title" name="title" placeholder="Property Title" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="city" name="city" placeholder="City" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" [(ngModel)]="owner" name="owner" placeholder="Owner" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="number" [(ngModel)]="bedrooms" name="bedrooms" placeholder="Bedrooms" class="form-control">
+            </div>
+            <div class="form-group">
+              <select name="type" placeholder="Select" class="form-control" [(ngModel)]="type" id="">
+                <option value="" disabled>Select the type of listing</option>
+                <option value="Estate">Estate</option>
+                <option value="Condos">Condos</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Mansion">Mansion</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="file" [(ngModel)]="image" name="image" id="image">
+            </div>
+            <div class="form-group">
+              <textarea name="description" id="" [(ngModel)]="description" class="form-control" cols="30" rows="10"></textarea>
+            </div> 
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="price" name="price" placeholder="price">
+            </div>
+            <input type="submit" value="Submit" class="btn btn-success">
+          </form>
+    </div>
+  </div>
+</div> 

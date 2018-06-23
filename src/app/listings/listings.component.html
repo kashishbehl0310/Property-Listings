@@ -1,0 +1,26 @@
+<div class="container listings">
+  <div class="row">
+    <!-- <div class="col-xs-12 col-md-12 col-lg-12">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let listing of listings">
+              {{ listing.title }}
+            </li>
+          </ul>
+    </div> -->
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let listing of listings">
+          <div class="article">
+            <img src="{{imgUrl}}" class="img-responsive thumbnail" alt="">
+            <a href="" [routerLink]="['/listing/'+listing.key]">
+              <h1>{{ listing.title }}</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="add_btn">
+          <button type="button" (click)="onAddPost()" id="add"  name="button">+</button>
+        </div>
+    </div>
+  </div>
+</div>

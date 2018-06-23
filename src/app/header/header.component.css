@@ -1,0 +1,18 @@
+.navigation{
+    background-color: #fff;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.14);
+    padding-bottom: 0;
+}
+.navigation .navbar-nav .active{
+    border-bottom: 4px solid #6d56c1;
+}
+.navigation .navbar-nav .nav-item{
+    padding: 5px;
+}
+.navigation .navbar-nav .nav-item .nav-link{
+    font-size: 18px;
+
+}
+.navigation .navbar-nav .active .nav-link{
+    color: #6d56c1;
+}

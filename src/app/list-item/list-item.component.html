@@ -1,0 +1,33 @@
+<div class="container">
+  <h2 class="page-heder">{{ listing.title }} <small>{{ listing.city }}</small> </h2>
+<div class="row">
+  <div class="col-md-6">
+      <img src="{{imageUrl}}" alt="">
+      <br><br>
+      <button class="EditButton"><a [routerLink]="['/edit-listing/'+id]">Edit</a></button>   
+      <button class="EditButton" (click)="deleteListing()">Delete</button>
+  </div>
+  <div class="col-md-6">
+    <div class="listing-details">
+      <h3>
+        Description
+      </h3>
+      <p class="prop-description">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, 
+          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+          containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+          PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <ul class="details">
+      <li><i class="fas fa-user fa-2x"></i> Owner: {{listing.owner}} </li>
+      <li><i class="fas fa-bed fa-2x"></i>Bedrooms: {{listing.bedrooms}}</li>
+      <li><i class="fas fa-home fa-2x"></i>Type: {{listing.type}} </li>
+      <li><i class="fas fa-dollar-sign fa-2x"></i>Price: {{listing.price}} </li>
+    </ul>
+  </div>
+</div>
+</div>
